@@ -1,5 +1,5 @@
 import React from 'react'
-export default function Droneshot()  {
+export default function QuoteComponent()  {
   return (
     <div>
      
