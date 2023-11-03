@@ -7,8 +7,8 @@ export default function Home() {
       <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
      
         <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          {/* Replace the Next.js logo with the text "4Vill contracting" */}
-          <div style={{ fontSize: '2rem', fontWeight: 'bold', color: 'white' }}>
+          
+          <div style={{ fontSize: '2rem', fontWeight: 'bold', color: 'black' }}>
             <p>
             4Vill. Contracting
             <span style={{fontSize:'0.8rem'}} className='inline-block align-baseline '>since 2003</span>

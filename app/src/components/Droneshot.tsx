@@ -3,7 +3,7 @@ export default function Droneshot()  {
   return (
     <div>
      
-      <p>Contact Us</p>
+      <p>Get a Quote</p>
     
     </div>
   )
