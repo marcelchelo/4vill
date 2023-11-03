@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import DroneShot from './src/components/Droneshot'
+import QuoteComponent from './src/components/QuoteComponent'
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24" style={{ background: 'rgba(0, 0, 0, 0.5)', color: 'white' }}>
@@ -25,7 +25,7 @@ export default function Home() {
         </Link>
         </div>
        
-        <DroneShot/>
+        <QuoteComponent/>
         
       </div>
 
