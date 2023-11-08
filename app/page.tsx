@@ -9,7 +9,7 @@ export default function Home() {
         <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
           
           <div style={{ fontSize: '2rem', fontWeight: 'bold', color: 'black' }}>
-            <p>
+            <p className='dark:text-red-500'>
             4Vill. Contracting
             <span style={{fontSize:'0.8rem'}} className='inline-block align-baseline '>since 2003</span>
             </p>
