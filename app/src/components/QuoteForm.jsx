@@ -57,8 +57,10 @@ export default function QuoteForm() {
                             className='mt-1 block w-full rounded-md border-gray-300 
                                 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 
                                 focus:ring-opacity-50' 
-                            placeholder='ceiling height, Firestop, taping level 5, carpentry, insulation finishing,
-                                all three?' 
+                            placeholder='ceiling height, Firestop,
+                                         finishing taping level 1-5, 
+                                            carpentry, insulation finishing,
+                                            all three?' 
                             value={details} 
                             onChange={(e) => setDetails(e.target.value)} />
                     </label>

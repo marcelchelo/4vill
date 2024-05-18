@@ -21,9 +21,9 @@ export default function Home() {
         <div className="hover:cursor-pointer hover:underline">
           <Link href="/projects" 
             prefetch={false}
-            className='text-xl font-semibold'
+            className='text-lg font-semibold'
             >
-           Projects
+           View Portfolio
           </Link>
         </div>
        
@@ -31,7 +31,7 @@ export default function Home() {
        <div className="hover:cursor-pointer hover:underline">
           <Link href="/getQuote" 
             prefetch={false}
-            className='text-xl font-semibold'
+            className='text-lg font-semibold'
             >
             Get a Quote
           </Link>
