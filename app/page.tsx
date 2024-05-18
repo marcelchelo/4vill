@@ -8,25 +8,31 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center justify-between p-24" style={{ background: 'rgba(0, 0, 0, 0.5)', color: 'white' }}>
       <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
      
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
+        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t lg:static lg:h-auto lg:w-auto lg:bg-none">
           
           <div style={{ fontSize: '2rem', fontWeight: 'bold', color: 'black' }}>
-            <p className=' dark:text-yellow-200'>
-            4Vill. Contracting
-            </p>
+              <p className=' dark:text-yellow-200'>
+              4Vill. Contracting
+              </p>
           </div>
           
-          
         </div>
+
         <div className="hover:cursor-pointer hover:underline">
-          <Link href="/projects" prefetch={false}>
+          <Link href="/projects" 
+            prefetch={false}
+            className='text-xl font-semibold'
+            >
            Projects
           </Link>
         </div>
        
        {/* Get a quote */}
        <div className="hover:cursor-pointer hover:underline">
-          <Link href="/getQuote" prefetch={false}>
+          <Link href="/getQuote" 
+            prefetch={false}
+            className='text-xl font-semibold'
+            >
             Get a Quote
           </Link>
         </div>
@@ -39,14 +45,14 @@ export default function Home() {
 
         {/* place 4 vill logo Here */}
         
-        {/* <Image
+        <Image
           className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
           src="/next.svg"
           alt="Next.js Logo"
           width={180}
           height={37}
           priority
-        /> */}
+        />
       </div>
 
       <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
@@ -58,9 +64,7 @@ export default function Home() {
         >
           <h2 className={`mb-3 text-2xl font-semibold`}>
             Wood and steel framing{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
+            
           </h2>
          
           <ul className={`m-0 max-w-[30ch] text-sm opacity-50`}>
@@ -79,10 +83,8 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           <h2 className={`mb-3 text-2xl font-semibold`}>
-            Drywall Installation{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
+            Drywall & Insulation
+            
           </h2>
           <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
             We can handle all your drywall needs, either commercial or residential.
@@ -98,9 +100,7 @@ export default function Home() {
         >
           <h2 className={`mb-3 text-2xl font-semibold`}>
             Taping and Finishing{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
+           
           </h2>
           <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
             We can handle all your taping and finishing needs for either commercial or residential.
@@ -117,9 +117,7 @@ export default function Home() {
         >
           <h2 className={`mb-3 text-2xl font-semibold`}>
             Bonded & Insured
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
+            
           </h2>
           <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
             $50 Million, able to tackle small and large projects.
