@@ -12,7 +12,7 @@ export default function Home() {
           
           <div style={{ fontSize: '2rem', fontWeight: 'bold', color: 'black' }}>
               <p className=' dark:text-yellow-200'>
-              4Vill. Contracting
+                4Vill. Contracting
               </p>
           </div>
           
