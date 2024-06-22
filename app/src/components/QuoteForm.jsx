@@ -50,6 +50,18 @@ export default function QuoteForm() {
                         onChange={(e) => setContactEmail(e.target.value)} />
                     </label>
                 </div>
+                {/* adddress */}
+                <div>
+                    <label className='block text-sm font-medium text-black'>
+                        Address:
+                        <input 
+                        className='mt-1 block w-full rounded-md border-gray-300 
+                            shadow-sm focus:border-indigo-300 focus:ring
+                            focus:ring-indigo-200 focus:ring-opacity-50' 
+                        type="text" value={contactEmail} 
+                        onChange={(e) => setContactEmail(e.target.value)} />
+                    </label>
+                </div>
                 <div>
                     <label className='block text-sm font-medium text-black'>
                         Project Description:
@@ -83,6 +95,7 @@ export default function QuoteForm() {
                             onChange={(e) => setContactPhone(e.target.value)} />
                     </label>
                 </div>
+
                 <div>
                     <label className='block text-sm font-medium text-black'>
                         Upload Documents:
