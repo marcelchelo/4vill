@@ -29,7 +29,7 @@ export default function QuoteForm() {
             <form onSubmit={handleSubmit} className='space-y-4'>
                 <div>
                     <label className='block text-sm font-medium text-black'>
-                        Company Name:
+                        Business or Home owner name:
                         <input 
                             className='mt-1 block w-full rounded-md border-gray-300 
                                 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 
@@ -52,13 +52,16 @@ export default function QuoteForm() {
                 </div>
                 <div>
                     <label className='block text-sm font-medium text-black'>
-                        Details:
+                        Project Description:
                         <textarea 
                             className='mt-1 block w-full rounded-md border-gray-300 
                                 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 
                                 focus:ring-opacity-50' 
-                            placeholder='ceiling height, Firestop,
-                                         finishing taping level 1-5, 
+                            placeholder='
+                                        information that will help us understand your project better,
+                                        square footage, comercial or residential,
+                                        ceiling height, Firestop, type of materials utilized,
+                                         finishing level 1-5, 
                                             carpentry, insulation finishing,
                                             all three?' 
                             value={details} 
@@ -70,13 +73,14 @@ export default function QuoteForm() {
                     <label className='block text-sm font-medium text-black'>
                         Contact Phone:
                         <input 
-                        className='mt-1 block w-full rounded-md
-                         border-gray-300 shadow-sm focus:border-indigo-300
-                          focus:ring focus:ring-indigo-200 focus:ring-opacity-50' 
-                          type="tel" 
-                          pattern="[0-9]{10}" 
-                          value={contactPhone} 
-                          onChange={(e) => setContactPhone(e.target.value)} />
+                            className='mt-1 block w-full rounded-md
+                             border-gray-300 shadow-sm focus:border-indigo-300
+                            focus:ring focus:ring-indigo-200 focus:ring-opacity-50' 
+                            type="tel" 
+                            pattern="\d{10}" 
+                            maxLength="10"
+                            value={contactPhone} 
+                            onChange={(e) => setContactPhone(e.target.value)} />
                     </label>
                 </div>
                 <div>
@@ -94,7 +98,9 @@ export default function QuoteForm() {
                     </label>
                 </div>
                 <div>
-                    <button className='w-full py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500' type="submit">Submit</button>
+                    <button className='w-1/3 py-2 px-4 border border-transparent rounded-md shadow-sm text-sm
+                     font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2
+                      focus:ring-blue-500' type="submit">Submit</button>
                 </div>
             </form>
         </div>
