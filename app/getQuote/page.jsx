@@ -10,12 +10,21 @@ export default function Page()  {
   
   
   return (
-    <div>
-      
+    <>
+    <NavBarComponent/>
+    <div className=' h-screen'>
+    
+      <div className='mt-4 '>
+        <div className="flex items-center justify-center flex-col">
+          <h1 className="font-bold font-mono text-4xl">GET IN TOUCH</h1>
+          <p className='font-light mt-2'>We would love to partner with you on your next project. Contact us today.</p>
+        </div>
+        <QuoteForm/>
 
-     <NavBarComponent/>
-      <QuoteForm/>
+      </div>
+      
         
     </div>
+    </>
   )
 }
