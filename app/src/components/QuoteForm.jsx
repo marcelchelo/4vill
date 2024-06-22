@@ -8,6 +8,7 @@ export default function QuoteForm() {
     const [details, setDetails] = useState('');
     const [contactEmail, setContactEmail] = useState('');
     const [contactPhone, setContactPhone] = useState('');
+    const [address, setAddress] = useState('');
     const [files, setFiles] = useState([]);
 
     // send the files to a lambda function endpoint
@@ -58,8 +59,8 @@ export default function QuoteForm() {
                         className='mt-1 block w-full rounded-md border-gray-300 
                             shadow-sm focus:border-indigo-300 focus:ring
                             focus:ring-indigo-200 focus:ring-opacity-50' 
-                        type="text" value={contactEmail} 
-                        onChange={(e) => setContactEmail(e.target.value)} />
+                        type="text" value={address} 
+                        onChange={(e) => setAddress(e.target.value)} />
                     </label>
                 </div>
                 <div>
