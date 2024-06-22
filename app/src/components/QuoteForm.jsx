@@ -23,16 +23,16 @@ export default function QuoteForm() {
 
     return (
     
-    <div className='flex justify-center items-center h-screen'>
+    <div className='flex justify-center items-center mt-6'>
 
 
-        <div className='bg-slate-300 p-6 rounded-lg shadow-md w-2/3'>
+        <div className='bg-slate-300 p-4 rounded-[8px]  w-2/3'>
             <form onSubmit={handleSubmit} className='space-y-4'>
                 <div>
                     <label className='block text-sm font-medium text-black'>
                         Business or Home owner name:
                         <input 
-                            className='mt-1 block w-full rounded-md border-gray-300 
+                            className='mt-1 p-1 block w-full rounded-md border-gray-300 
                                 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 
                                 focus:ring-opacity-50' 
                             type="text" 
@@ -44,7 +44,7 @@ export default function QuoteForm() {
                     <label className='block text-sm font-medium text-black'>
                         Contact Email:
                         <input 
-                        className='mt-1 block w-full rounded-md border-gray-300 
+                        className='mt-1 p-1 block w-full rounded-md border-gray-300 
                             shadow-sm focus:border-indigo-300 focus:ring
                             focus:ring-indigo-200 focus:ring-opacity-50' 
                         type="email" value={contactEmail} 
@@ -56,7 +56,7 @@ export default function QuoteForm() {
                     <label className='block text-sm font-medium text-black'>
                         Address:
                         <input 
-                        className='mt-1 block w-full rounded-md border-gray-300 
+                        className='mt-1 p-1 block w-full rounded-md border-gray-300 
                             shadow-sm focus:border-indigo-300 focus:ring
                             focus:ring-indigo-200 focus:ring-opacity-50' 
                         type="text" value={address} 
@@ -67,7 +67,7 @@ export default function QuoteForm() {
                     <label className='block text-sm font-medium text-black'>
                         Project Description:
                         <textarea 
-                            className='mt-1 block w-full rounded-md border-gray-300 
+                            className='mt-1 p-1 block w-full rounded-md border-gray-300 
                                 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 
                                 focus:ring-opacity-50' 
                             placeholder='
@@ -86,7 +86,7 @@ export default function QuoteForm() {
                     <label className='block text-sm font-medium text-black'>
                         Contact Phone:
                         <input 
-                            className='mt-1 block w-full rounded-md
+                            className='mt-1 p-1 block w-full rounded-md
                              border-gray-300 shadow-sm focus:border-indigo-300
                             focus:ring focus:ring-indigo-200 focus:ring-opacity-50' 
                             type="tel" 
