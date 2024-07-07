@@ -24,17 +24,17 @@ export default function QuoteForm() {
 
     return (
     
-    <div className='flex justify-center items-center h-screen'>
+    <div className='flex justify-center items-center mt-6 p-2'>
 
 
-        <div className='bg-slate-300 p-6 rounded-lg shadow-md w-2/3'>
+        <div className='bg-slate-300 p-4 rounded-[8px] w-2/3'>
             <form onSubmit={handleSubmit} className='space-y-4'>
                 <div>
                     <label className='block text-sm font-medium text-black'>
                         Business or Home owner name:
                         <input 
-                            className='mt-1 block w-full rounded-md border-gray-300 
-                                shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 
+                            className='block w-full rounded-md 
+                                  focus:ring-indigo-200 
                                 focus:ring-opacity-50' 
                             type="text" 
                             value={companyName} 
@@ -47,9 +47,7 @@ export default function QuoteForm() {
                             <label className='block text-sm font-medium text-black'>
                                 Contact Phone:
                                 <input 
-                                    className='mt-1 block w-full rounded-md
-                                    border-gray-300 shadow-sm focus:border-indigo-300
-                                    focus:ring focus:ring-indigo-200 focus:ring-opacity-50' 
+                                    className="mt-1 block w-full"
                                     type="tel" 
                                     pattern="\d{10}" 
                                     maxLength="10"
@@ -122,19 +120,17 @@ export default function QuoteForm() {
 
                 
                 <div>
-                    <label className='block text-sm font-medium text-black'>
+                    <label className="block text-sm font-medium text-black">
                         Project Description:
                         <textarea 
-                            className='mt-1 block w-full rounded-md border-gray-300 
+                            className="mt-1 block w-full rounded-md border-gray-300 
                                 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 
-                                focus:ring-opacity-50' 
-                            placeholder='
-                                        information that will help us understand your project better,
-                                        square footage, comercial or residential,
-                                        ceiling height, Firestop, type of materials utilized,
-                                         finishing level 1-5, 
-                                            carpentry, insulation finishing,
-                                            all three?' 
+                                focus:ring-opacity-50"
+                            placeholder="
+                                        type of work needed?: framing, insulation, drywall, taping, painting,&#10;
+                                        ceiling height, fireStop, materials to be used,&#10;
+                                        finishing level 1-5, insulation finishing,
+                                        "
                             value={details} 
                             onChange={(e) => setDetails(e.target.value)} />
                     </label>
