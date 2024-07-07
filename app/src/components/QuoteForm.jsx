@@ -10,11 +10,12 @@ export default function QuoteForm() {
     const [contactPhone, setContactPhone] = useState('');
     const [address, setAddress] = useState('');
     const [files, setFiles] = useState([]);
-
+    const [zipcode, setZipcode] = useState('');
+    const [superName, setSuperName] = useState('');
     // send the files to a lambda function endpoint
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log("Form submitted");
+      
         console.log("Company Name:", companyName);
         console.log("Details:", details);
         console.log("Contact Email:", contactEmail);
@@ -53,20 +54,21 @@ export default function QuoteForm() {
                 </div>
                 {/* adddress */}
                 <div>
-                    <label className='block text-sm font-medium text-black'>
+                    <label className="block text-sm font-medium text-black">
                         Address:
                         <input 
-                            className='mt-1 p-1 block w-full rounded-md
+                            className="mt-1 p-1 block w-full rounded-md
                              border-gray-300 shadow-sm focus:border-indigo-300
-                            focus:ring focus:ring-indigo-200 focus:ring-opacity-50' 
+                            focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
                             type="tel" 
                             pattern="\d{10}" 
                             maxLength="10"
                             value={contactPhone} 
-                            onChange={(e) => setContactPhone(e.target.value)} />
+                            onChange={(e) => setContactPhone(e.target.value)}
+                        />
                     </label>
                 </div>
-            </div>
+            
             {/* adddress */}
             <div className='flex justify-between '>
                 <div className='flex-1 mr-2'>
@@ -95,31 +97,21 @@ export default function QuoteForm() {
                     </label>
                 </div>
 
-            </div>
+                </div>
             
-            <div>
-                <label className='block text-sm font-medium text-black'>
-                    Project Super Name:
-                    <input 
+                <div>
+                    <label className='block text-sm font-medium text-black'>
+                        Project Super Name:
+                        <input 
                         className='mt-1 p-1 block w-full rounded-md border-gray-300 
                             shadow-sm focus:border-indigo-300 focus:ring
                             focus:ring-indigo-200 focus:ring-opacity-50' 
                         type="text" 
                         value={superName} 
                         onChange={(e) => setSuperName(e.target.value)} />
-                </label>
-            </div>
-            <div>
-                <label className='block text-sm font-medium text-black'>
-                    Project Description:
-                    <textarea 
-                        className='mt-1 p-1 block w-full rounded-md border-gray-300 
-                            shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 
-                            focus:ring-opacity-50' 
-                        placeholder='information that will help us understand your project better, square footage, commercial or residential, ceiling height, Firestop, type of materials utilized, finishing level 1-5'
-                    ></textarea>
-                </label>
-            </div>
+                    </label>
+                </div>
+            
 
                 {/* end of address  */}
 
