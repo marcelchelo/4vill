@@ -57,9 +57,7 @@ export default function QuoteForm() {
                             <label className='block text-sm font-medium text-black'>
                                 Contact Email:
                                 <input 
-                                className='mt-1 block w-full rounded-md border-gray-300 
-                                    shadow-sm focus:border-indigo-300 focus:ring
-                                    focus:ring-indigo-200 focus:ring-opacity-50' 
+                                className='mt-1 block w-full' 
                                 type="email" value={contactEmail} 
                                 onChange={(e) => setContactEmail(e.target.value)} />
                             </label>
@@ -87,9 +85,7 @@ export default function QuoteForm() {
                     <label className=' text-sm font-medium'>
                         Project&apos;s Zipcode:
                         <input 
-                            className='mt-1 p-1 block w-full rounded-md border-gray-300 
-                                shadow-sm focus:border-indigo-300 focus:ring
-                                focus:ring-indigo-200 focus:ring-opacity-50' 
+                            className='mt-1 p-1 block w-full' 
                             type="text" 
                             value={zipcode} 
                             onChange={(e) => setZipcode(e.target.value)} />
@@ -102,9 +98,7 @@ export default function QuoteForm() {
                     <label className='block text-sm font-medium text-black'>
                         Project Super Name:
                         <input 
-                        className='mt-1 p-1 block w-full rounded-md border-gray-300 
-                            shadow-sm focus:border-indigo-300 focus:ring
-                            focus:ring-indigo-200 focus:ring-opacity-50' 
+                        className='mt-1 p-1 block w-full ' 
                         type="text" 
                         value={superName} 
                         onChange={(e) => setSuperName(e.target.value)} />
@@ -119,9 +113,7 @@ export default function QuoteForm() {
                     <label className="block text-sm font-medium text-black">
                         Project Description:
                         <textarea 
-                            className="mt-1 block w-full rounded-md border-gray-300 
-                                shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 
-                                focus:ring-opacity-50"
+                            className="mt-1 block w-full"
                             placeholder="
                                         type of work needed?: framing, insulation, drywall, taping, painting,&#10;
                                         ceiling height, fireStop, materials to be used,&#10;
@@ -138,9 +130,7 @@ export default function QuoteForm() {
                     <label className='block text-sm font-medium text-black'>
                         Upload Documents:
                         <input 
-                            className='mt-1 block w-full rounded-md border-gray-300 
-                                shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 
-                                focus:ring-opacity-50' 
+                            className='mt-1 block w-full' 
                             type="file" 
                             accept=".pdf,image/*" 
                             multiple
