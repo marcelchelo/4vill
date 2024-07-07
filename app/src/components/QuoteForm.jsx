@@ -33,7 +33,7 @@ export default function QuoteForm() {
                     <label className='block text-sm font-medium text-black'>
                         Business or Home owner name:
                         <input 
-                            className="block w-full "
+                            className="block w-full p-1 "
                             type="text" 
                             value={companyName} 
                             onChange={(e) => setCompanyName(e.target.value)} />
