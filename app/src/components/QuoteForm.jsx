@@ -73,7 +73,7 @@ export default function QuoteForm() {
             <div className='flex justify-between '>
                 <div className='flex-1 mr-2'>
                     <label className=' text-sm font-medium'>
-                        Project's Address:
+                        Project&apos;s Address:
                         <input 
                             className='mt-1 p-1 block w-full rounded-md border-gray-300 
                                 shadow-sm focus:border-indigo-300 focus:ring
@@ -86,7 +86,7 @@ export default function QuoteForm() {
 
                 <div className='flex-1 ml-2'>
                     <label className=' text-sm font-medium'>
-                        Project's Zipcode:
+                        Project&apos;s Zipcode:
                         <input 
                             className='mt-1 p-1 block w-full rounded-md border-gray-300 
                                 shadow-sm focus:border-indigo-300 focus:ring
