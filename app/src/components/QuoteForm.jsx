@@ -41,18 +41,38 @@ export default function QuoteForm() {
                             onChange={(e) => setCompanyName(e.target.value)} />
                     </label>
                 </div>
-                <div>
-                    <label className='block text-sm font-medium text-black'>
-                        Contact Email:
-                        <input 
-                        className='mt-1 block w-full rounded-md border-gray-300 
-                            shadow-sm focus:border-indigo-300 focus:ring
-                            focus:ring-indigo-200 focus:ring-opacity-50' 
-                        type="email" value={contactEmail} 
-                        onChange={(e) => setContactEmail(e.target.value)} />
-                    </label>
-                </div>
+                
+                <div className='flex'>
+                        <div className='flex-1 mr-2'>
+                            <label className='block text-sm font-medium text-black'>
+                                Contact Phone:
+                                <input 
+                                    className='mt-1 block w-full rounded-md
+                                    border-gray-300 shadow-sm focus:border-indigo-300
+                                    focus:ring focus:ring-indigo-200 focus:ring-opacity-50' 
+                                    type="tel" 
+                                    pattern="\d{10}" 
+                                    maxLength="10"
+                                    value={contactPhone} 
+                                    onChange={(e) => setContactPhone(e.target.value)} />
+                            </label>
+                        </div>
+                        <div className='flex-1 ml-2'>
+                            <label className='block text-sm font-medium text-black'>
+                                Contact Email:
+                                <input 
+                                className='mt-1 block w-full rounded-md border-gray-300 
+                                    shadow-sm focus:border-indigo-300 focus:ring
+                                    focus:ring-indigo-200 focus:ring-opacity-50' 
+                                type="email" value={contactEmail} 
+                                onChange={(e) => setContactEmail(e.target.value)} />
+                            </label>
+                        </div>
         
+
+
+                </div>
+                       
             
             {/* adddress */}
             <div className='flex justify-between '>
@@ -120,20 +140,7 @@ export default function QuoteForm() {
                     </label>
                 </div>
                 
-                <div>
-                    <label className='block text-sm font-medium text-black'>
-                        Contact Phone:
-                        <input 
-                            className='mt-1 block w-full rounded-md
-                             border-gray-300 shadow-sm focus:border-indigo-300
-                            focus:ring focus:ring-indigo-200 focus:ring-opacity-50' 
-                            type="tel" 
-                            pattern="\d{10}" 
-                            maxLength="10"
-                            value={contactPhone} 
-                            onChange={(e) => setContactPhone(e.target.value)} />
-                    </label>
-                </div>
+                
 
                 <div>
                     <label className='block text-sm font-medium text-black'>
