@@ -3,8 +3,7 @@ import { NextResponse, NextRequest } from "next/server";
 
 export async function POST(req: NextRequest) {
 
-    // Parse the request body if it's x-www-form-urlencoded
-    const formData = qs.parse(await req.text());
+   
     //log the request body
     console.log(formData);  
 
