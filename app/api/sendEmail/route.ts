@@ -1,6 +1,5 @@
 import { NextResponse, NextRequest } from "next/server";
 
-
 export async function POST(req: NextRequest) {
 
     //log the request body
@@ -9,8 +8,6 @@ export async function POST(req: NextRequest) {
     messsage: "email sent successfully",
   });
 }
-
-
 
 // const sgMail = require('@sendgrid/mail')
 
