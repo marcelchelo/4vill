@@ -3,10 +3,8 @@ import { NextResponse, NextRequest } from "next/server";
 
 export async function POST(req: NextRequest) {
 
-   
     //log the request body
     console.log(formData);  
-
   return NextResponse.json({
     messsage: "email sent successfully",
   });
