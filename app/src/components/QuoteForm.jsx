@@ -69,12 +69,29 @@ export default function QuoteForm() {
             className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 resize-y" 
             value={details} 
             onChange={(e) => setDetails(e.target.value)} 
-            placeholder="Enter details"
+            placeholder="For an accurate quote please provide adequate information, and scope required."
           />
         </label>
       </div>
+
+      {/* upload files */}
+      <div className="w-full px-3">
+        <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
+          Documents:
+          <textarea 
+            className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 resize-y" 
+            value={details} 
+            onChange={(e) => setDetails(e.target.value)} 
+            placeholder="Upload floor plan, in pdf format"
+          />
+        </label>
+      </div>
+
     </div>
+    <button className='bg-blue-400 p-2  rounded-md'>Submit</button>
   </form>
+        <p className='text-sm'>We will contact you with an estimate for your project within 2 business days.</p>
+        <p className='text-sm'>A jobsite visit may be required.</p>
         </div>
     </div>
     );

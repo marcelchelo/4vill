@@ -33,7 +33,7 @@ export default function Home() {
             prefetch={false}
             className='text-lg font-semibold'
             >
-            Get a Quote
+            Get an Estimate
           </Link>
         </div>
         
