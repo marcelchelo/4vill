@@ -19,23 +19,29 @@ const cardData = [
   {
     siteName: "200-East-39th-Street",
     address: "505 Walnut St",
-    sqf: "48,000",
+    sqf: "248,000",
     scope: "Insulation, Drywall, and Taping ",
     image: "/200-East-39th-Street.jpg",
   },
   {
     siteName: "Staten Island College",
-    address: "60",
     sqf: "52,000",
     scope: "Remodelation of Various college campus buildings. Drywall pach work and finishing, painting, and carpentry work. ",
-    image: "/vercel.svg",
+    image: "/cuny.jpg",
   },
+  {
+    siteName: "Knickerbocker Hotel",
+    image: "/knickerbocker.jpg",
+    sqf: "360,000",
+    scope: "Level 5 finishing and metal indoor framing."
+  },
+
 ];
 
 export default function Page() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-4 md:p-24" style={{ background: 'rgba(0, 0, 0, 0.5)', color: 'white' }}>
-      <h2 className="text-3xl font-semibold mb-4">Previous Projects</h2>
+    <main className="flex min-h-screen flex-col items-center justify-between p-2 md:p-24" style={{ background: 'rgba(0, 0, 0, 0.5)', color: 'white' }}>
+      <h2 className="text-3xl font-semibold mb-2">Previous Projects</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {cardData.map((site, index) => (
           <div key={index} className="bg-gray-300 rounded-lg p-4 shadow-md">
@@ -46,11 +52,12 @@ export default function Page() {
                 width={500}
                 height={500}
                 alt={site.siteName}
+                className="rounded-lg shadow-md"
               />
             </div>
-            <div className='flex justify-between'>
+            <div className='flex flex-col md:flex-row justify-between items-center mt-4'>
               <div className="text-lg text-black font-semibold">{site.siteName}</div>
-              <div className="text-gray-600 text-lg ">SQF: {site.sqf}</div>
+              <div className="text-gray-600 text-lg mt-2 md:mt-0">SQF: {site.sqf}</div>
             </div>
 
             

@@ -5,7 +5,8 @@ export default function NavBarComponent() {
     <div className='bg-gradient-to-b from-black to-zinc-800 p-4'>
       <nav className='flex items-center justify-between'>
         <div className='text-white font-bold text-xl dark:text-yellow-400'>
-          <h1 className='font-mono font-bold'>4Vill. Contracting</h1>
+          <h1 className='font-mono font-bold sm:hidden'>4Vill corp</h1>
+          <h1 className='font-mono font-bold hidden sm:block'>4Vill. Contracting</h1>
         </div>
         <ul className='flex space-x-4 text-2xl font-thin'>
           <li>
