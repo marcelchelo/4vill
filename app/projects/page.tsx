@@ -13,7 +13,7 @@ const cardData = [
     siteName: "180E-88st",
     address: "404 Birch St",
     sqf: "570,000",
-    scope: "High ceillings 20+ feet, perfromed drywall installation and level 5 taping.  ",
+    scope: "High ceillings, perfromed drywall installation and level 5 taping.  ",
     image: "/180E-88st.jpg",
   },
   {
