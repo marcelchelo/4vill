@@ -33,7 +33,13 @@ const cardData = [
     siteName: "Knickerbocker Hotel",
     image: "/knickerbocker.jpg",
     sqf: "360,000",
-    scope: "Level 5 finishing and metal indoor framing."
+    scope: "Complete renovation of all hotel suites including exterior framing and renovation of all public spaces."
+  },
+  {
+    siteName: "Pier House and 1 Hotel",
+    image: "/bkHotel.jpeg",
+    sqf: "360,000",
+    scope: "New construction of all interior drywall, carpentry & metal framing. 90 Furman St (North building) 10 floors, 87 units. 130 Furman St (South building) 4 floors, 22 units."
   },
 
 ];
@@ -55,13 +61,13 @@ export default function Page() {
                 className="rounded-lg shadow-md"
               />
             </div>
-            <div className='flex flex-col md:flex-row justify-between items-center mt-4'>
-              <div className="text-lg text-black font-semibold">{site.siteName}</div>
-              <div className="text-gray-600 text-lg mt-2 md:mt-0">SQF: {site.sqf}</div>
+            <div className='flex flex-col md:flex-row justify-between items-center mt-4 gap-x-4'>
+              <div className="text-md text-black font-semibold">{site.siteName}</div>
+              <div className="text-gray-600 text-sm">SQF: {site.sqf}</div>
             </div>
 
             
-            <div className="text-black mt-2">{site.scope}</div>
+            <div className="text-black mt-2 font-light">{site.scope}</div>
           </div>
         ))}
       </div>
