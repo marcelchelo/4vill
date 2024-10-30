@@ -19,17 +19,23 @@ const cardData = [
   {
     siteName: "200-East-39th-Street",
     address: "505 Walnut St",
-    sqf: "48,000",
+    sqf: "248,000",
     scope: "Insulation, Drywall, and Taping ",
     image: "/200-East-39th-Street.jpg",
   },
   {
     siteName: "Staten Island College",
-    address: "60",
     sqf: "52,000",
     scope: "Remodelation of Various college campus buildings. Drywall pach work and finishing, painting, and carpentry work. ",
-    image: "/vercel.svg",
+    image: "/cuny.jpg",
   },
+  {
+    siteName: "Knickerbocker Hotel",
+    image: "/knickerbocker.jpg",
+    sqf: "360,000",
+    scope: "Level 5 finishing and metal indoor framing."
+  },
+
 ];
 
 export default function Page() {
