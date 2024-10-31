@@ -46,8 +46,14 @@ const cardData = [
 
 export default function Page() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-2 md:p-24" style={{ background: 'rgba(0, 0, 0, 0.5)', color: 'white' }}>
-      <h2 className="text-3xl font-semibold mb-2">Previous Projects</h2>
+
+    <div className="p-2 ">
+      <header className="text-center">
+        <h2 className="text-4xl font-semibold mt-4">Previous Projects</h2>
+      </header>
+
+    {/* Cards */}
+    <main className="flex min-h-screen  flex-col items-center justify-between p-2 md:p-4">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {cardData.map((site, index) => (
           <div key={index} className="bg-gray-300 rounded-lg p-4 shadow-md">
@@ -72,5 +78,6 @@ export default function Page() {
         ))}
       </div>
     </main>
+    </div>
   );
 }
