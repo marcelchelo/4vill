@@ -15,8 +15,10 @@ export default function NavBarComponent() {
 
 
         {/* Other Links */}
-        <ul className='flex space-x-2 text-xl font-normal'>
-          
+        <ul className='flex space-x-4 text-lg font-mono'>
+          <li>
+            <a href='/projects' className='text-white underline underline-offset-4 hover:text-yellow-400'>Projects</a>
+          </li>
           <li>
             <a href='/getQuote' className='text-white underline underline-offset-4 hover:text-yellow-400'>Contact</a>
           </li>
