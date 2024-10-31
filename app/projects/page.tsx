@@ -47,11 +47,10 @@ const cardData = [
 export default function Page() {
   return (
 
-    <div className="p-2 ">
-      <header className="text-center">
-        <h2 className="text-4xl font-semibold mt-4">Previous Projects</h2>
-      </header>
-
+    <div className="p-2">
+     
+      <h2 className="text-4xl text-center font-semibold mt-4">Previous Projects</h2>
+    
     {/* Cards */}
     <main className="flex min-h-screen  flex-col items-center justify-between p-2 md:p-4">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
