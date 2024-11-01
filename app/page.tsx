@@ -58,13 +58,12 @@ export default function Home() {
             rel="noopener noreferrer"
           >
             <h2 className={`mb-3 text-2xl font-semibold`}>
-              Taping and Finishing{' '}
+              Drywall Finishing{' '}
               
             </h2>
             <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-              We can handle all your taping and finishing needs for either commercial or residential.
-              Level 5 taping, skim coating, etc.
-              Production pricing available for comercial spaces
+              We can handle all final stages of drywall installation. Including applying joint compound, sanding, and creating a smooth surface ready for painting or other finishes.
+            
             </p>
           </a>
 
