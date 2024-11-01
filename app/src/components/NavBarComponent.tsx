@@ -6,10 +6,10 @@ export default function NavBarComponent() {
       <nav className='flex items-center justify-between'>
         <div className='text-white font-bold text-xl dark:text-yellow-400'>
           <Link href='/' legacyBehavior>
-              <a className='font-mono font-bold sm:hidden'>4Vill corp</a>
+              <a className='font-mono font-bold sm:hidden'>4Vill Corp</a>
             </Link>
             <Link href='/' legacyBehavior>
-              <a className='font-mono font-bold hidden sm:block'>4Vill. Contracting</a>
+              <a className='font-mono font-bold hidden sm:block'>4Vill Contracting</a>
             </Link>
         </div>
 
