@@ -50,11 +50,12 @@ export default function QuoteForm() {
                                     type="text" 
                                     placeholder="123-456-7890"
                                     onChange={(e) => {
-                                        const phoneNumber = e.target.value;
-                                        if (phoneNumber.length === 10) {
-                                            setContactPhone(phoneNumber);
-                                        }
-                                    }}
+                                      const phoneNumber = e.target.value;
+                                      if (/^\d{0,10}$/.test(phoneNumber)) {
+                                          setContactPhone(phoneNumber);
+                                      }
+                                  }}
+                                  value={contactPhone}
                                 />
                             </label>
                         </div>
