@@ -4,20 +4,38 @@ import NavBarComponent from './src/components/NavBarComponent'
 export default function Home() {
   return (
 
-    <div className="min-h-screen flex flex-col" style={{ background: 'rgba(0, 0, 0, 0.2)' }}>
-        <NavBarComponent/>
-     
+    <div>
 
-    
-      <main className="flex flex-col items-center justify-center flex-grow p-24">
-     
+      <NavBarComponent/>
+      {/* Video Looping */}
+      
+      <div className='w-full '>
 
+        
+          <video className='w-full h-full object-cover' autoPlay muted loop preload="none">
+            <source src="/nycSkyline.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+      </div>
+
+      
+
+      <div className="min-h-screen flex flex-col" style={{ background: 'rgba(0, 0, 0, 0.1)' }}> 
+        
+        <main className="flex flex-col items-center  flex-grow p-1">
+      
+        
+        
+
+
+
+        {/* Bottom @ bottom of page */}
    
 
         <div className="grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
           <a
             href="https://www.4villcorp.com/getQuote"
-            className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-black hover:text-white"
+            className="group rounded-lg border border-transparent px-5 py-4  hover:bg-black hover:text-white"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -37,7 +55,7 @@ export default function Home() {
 
           <a
             href="https://www.4villcorp.com/getQuote"
-            className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-black hover:text-white"
+            className="group rounded-lg  px-5 py-4 hover:bg-black hover:text-white"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -53,7 +71,7 @@ export default function Home() {
 
           <a
             href="https://www.4villcorp.com/getQuote"
-            className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-black hover:text-white"
+            className="group rounded-lg px-5 py-4  hover:bg-black hover:text-white"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -69,7 +87,7 @@ export default function Home() {
 
           <a
             href="https://www.4villcorp.com/getQuote"
-            className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-black hover:text-white"
+            className="group rounded-lg px-5 py-4 hover:bg-black hover:text-white"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -84,6 +102,7 @@ export default function Home() {
 
         </div>
       </main>
+    </div>
     </div>
 
 
