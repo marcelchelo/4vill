@@ -8,10 +8,7 @@ export default function QuoteForm() {
     const [details, setDetails] = useState('');
     const [contactEmail, setContactEmail] = useState('');
     const [contactPhone, setContactPhone] = useState('');
-    const [address, setAddress] = useState('');
     const [files, setFiles] = useState([]);
-    const [zipcode, setZipcode] = useState('');
-    const [superName, setSuperName] = useState('');
     
     // send the files to a lambda function endpoint
     const handleSubmit = (e) => {
@@ -77,10 +74,11 @@ export default function QuoteForm() {
                         <div className="w-full px-3">
                             <label className="block uppercase tracking-wide text-gray-700 text-sm font-bold mb-2">
                                 Documents:
-                                <textarea 
+                                <input 
+                                    type='file'
                                     className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 resize-y" 
-                                    value={details} 
-                                    onChange={(e) => setDetails(e.target.value)} 
+                                    accept=".pdf"
+                                    onChange={(e) => setDetails(e.target.files[0])} 
                                     placeholder="Upload floor plan, in pdf format"
                                 />
                             </label>
