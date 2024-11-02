@@ -110,6 +110,18 @@ export default function QuoteForm() {
                     <p className='text-xs font-extralight'>We will contact you with an estimate for your project within 2 business days.</p>
                     <p className='text-xs'>A jobsite visit may be required.</p>
                 </div>
+
+                {/* Form Link */}
+                <div>
+                    <a 
+                        href='https://docs.google.com/forms/d/e/1FAIpQLSeUcM0k6VfMqUK5-8NROiZESoRXyvj9dLLEhkmsKSR0ILwJ-Q/viewform?usp=sf_link' 
+                        target='_blank' 
+                        rel='noopener noreferrer' 
+                        className='text-blue-500 underline'
+                    >
+                        Fill out Google Form
+                    </a>
+                </div>
                 
             </div>
         </div>
