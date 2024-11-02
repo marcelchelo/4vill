@@ -9,9 +9,9 @@ export async function POST(request) {
   const msg = {
     to: 'marcelo.e.villalba@gmail.com', // Change to your recipient
     from: 'info@megasoftwaresolutions.com', // Change to your verified sender
-    subject: 'Sending with SendGrid is Fun',
-    text: 'and easy to do anywhere, even with Node.js',
-    html: '<strong>and easy to do anywhere, even with Node.js</strong>',
+    subject: 'How fast is sendgrid?',
+    text: 'Lets find ouut!',
+    html: '<strong> I will probably remove this, why would i want it?</strong>',
   }
 
   try {
