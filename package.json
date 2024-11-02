@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@sendgrid/mail": "^8.1.4",
+    "mailgun.js": "^10.2.3",
     "next": "14.0.0",
     "react": "^18",
     "react-dom": "^18"
