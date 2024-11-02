@@ -29,7 +29,6 @@
 //     })
 //   }
 // }
-
 export async function GET(request) {
   return new Response('Use POST to send an email.', {
     status: 200,
