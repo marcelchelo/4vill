@@ -1,6 +1,6 @@
 
 import sgMail from '@sendgrid/mail'
-console.log(process.env.SENDGRID_API_KEY)
+
 sgMail.setApiKey(process.env.SENDGRID_API_KEY)
 
 
@@ -8,7 +8,7 @@ sgMail.setApiKey(process.env.SENDGRID_API_KEY)
 export async function POST(request) {
   const msg = {
     to: 'marcelo.e.villalba@gmail.com', // Change to your recipient
-    from: 'info@megasoftwaresolutions.com', // Change to your verified sender
+    from: 'estimate@4villcorp.com', // Change to your verified sender
     subject: 'How fast is sendgrid?',
     text: 'Lets find ouut!',
     html: '<strong> I will probably remove this, why would i want it?</strong>',
