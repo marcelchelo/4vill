@@ -24,10 +24,11 @@ export default function QuoteForm() {
         <div className='flex justify-center items-center mt-4'>
             <div className='p-2 rounded-md w-3/4 sm:w-full'>
                 <form className="sm:w-full " onSubmit={handleSubmit}>
+
                     <div className="flex flex-wrap -mx-3 mb-6">
                         <div className="w-full px-3">
                             <label className="block uppercase tracking-wide text-gray-700 text-sm font-bold mb-2">
-                                Business or Home owner name:
+                                Business or Contact Name:
                                 <input 
                                     className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" 
                                     type="text" 
@@ -38,6 +39,22 @@ export default function QuoteForm() {
                             </label>
                         </div>
                     </div>
+
+                    <div className="flex flex-wrap -mx-3 mb-6">
+                        <div className="w-full px-3">
+                            <label className="block uppercase tracking-wide text-gray-700 text-sm font-bold mb-2">
+                                Email:
+                                <input 
+                                    type='email'
+                                    className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" 
+                                    onChange={(e) => setEmail(e.target.value)} 
+                                    placeholder="Enter your email"
+                                />
+                            </label>
+                        </div>
+                    </div>
+
+
                     <div className='flex flex-wrap -mx-3 mb-6'>
                         <div className='w-full px-3'>
                             <label className='block uppercase tracking-wide text-gray-700 text-sm font-bold mb-2'>
@@ -73,7 +90,7 @@ export default function QuoteForm() {
                     <div className="flex flex-wrap -mx-3 mb-6">
                         <div className="w-full px-3">
                             <label className="block uppercase tracking-wide text-gray-700 text-sm font-bold mb-2">
-                                Documents:
+                                Floor Plan PDF:
                                 <input 
                                     type='file'
                                     className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 resize-y" 
