@@ -20,7 +20,16 @@ export default function NavBarComponent() {
             <a href='/projects' className='text-white underline underline-offset-4 hover:text-yellow-400'>Projects</a>
           </li>
           <li>
-            <a href='/getQuote' className='text-white underline underline-offset-4 hover:text-yellow-400'>Contact</a>
+            <a href='/getQuote' className='text-white underline underline-offset-4 hover:text-yellow-400'>Estimate</a>
+          </li>
+          <li>
+            <a href='https://fanatical-math-e2a.notion.site/1345c9f2c2db80e5bb5efaf2a354eaee?pvs=105' 
+                target='_blank' 
+                rel='noopener noreferrer' className='text-white underline underline-offset-4 hover:text-yellow-400'
+                >
+              Trabaja con nosotros
+            </a>
+              
           </li>
         </ul>
       </nav>

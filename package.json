@@ -12,7 +12,8 @@
     "mailgun.js": "^10.2.3",
     "next": "14.0.0",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-helmet": "^6.1.0"
   },
   "devDependencies": {
     "@types/node": "^20",
